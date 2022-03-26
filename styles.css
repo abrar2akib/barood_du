@@ -9,9 +9,41 @@ h1 {
     font-family: 'Righteous', cursive;
     color: blue;
 }
+
+#about, #policy, #contributors {
+        margin: 100px;
+        text-align: justify;
+}
+
+
+#policy>ul>li {
+    margin-top: 20px;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+th, td {
+    border: 2px solid orange !important;
+    padding: 15px !important;
+    text-align: center !important;
+}
+
+
 body {
     background-image: url('./assets/doodle.png');
 }
+
+.info-body {
+    font-size: 1.5rem;
+}
+
+
+
 footer{
     background-color:rgb(240, 240, 240);
     color: black;
@@ -21,6 +53,7 @@ footer{
     padding-left: 20px;
     padding-right: 20px;
     font-size: small;
+    margin-top: 50px;
 }
 
 
@@ -28,3 +61,13 @@ footer{
     min-height: calc(100vh - 40px);
 }
 
+
+@media only screen and (max-width: 600px) {
+    .info-body {
+      font-size: 1rem;
+    }
+
+    #about, #policy, #contributors {
+        margin: 20px;
+    }
+}
